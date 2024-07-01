@@ -1,0 +1,6 @@
+framework module Pods_RNLaundryTrivialHelper {
+  umbrella header "Pods-RNLaundryTrivialHelper-umbrella.h"
+
+  export *
+  module * { export * }
+}
