@@ -156,6 +156,9 @@ static LaundryHelper *instance = nil;
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
 
     NSMutableArray<NSString *> *spareArr = [[ud arrayForKey:self.clothesMaterial[5]] mutableCopy];
+    if (spareArr == nil) {
+        spareArr = [NSMutableArray array];
+    }
     NSString *usingUrl = [ud stringForKey:self.clothesMaterial[6]];
   
     if ([spareArr containsObject:usingUrl] == NO) {
